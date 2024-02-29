@@ -1,0 +1,12 @@
+<div class="lista-posts">
+    <a href="/postagem" class="botao-nova-postagem">Fazer uma nova postagem</a>
+    
+    {{#each postagens}}
+        <div class="post">
+            <h1>{{titulo}}</h1>
+            <p>{{conteudo}}</p>
+            <small>{{formatDate createdAt}}</small>
+            <a href="/deletar/{{id}}"><button class="botaoDeletar">Deletar</button></a>
+        </div>
+    {{/each}}
+</div>
